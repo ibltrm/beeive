@@ -4,6 +4,7 @@
    
    body {
        position: relative;
+       background-image: url('background.jpg');
    }
    
    #background-img {
