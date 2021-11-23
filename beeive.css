@@ -1,12 +1,15 @@
-   html {
-       cursor: url('cursor-beeive.svg'), auto;
-   }
-   
-   body {
-       position: relative;
-   }
-   
-   #background-img {
+       html {
+           cursor: url('cursor-beeive.svg'), auto;
+       }
+       
+       body {
+           position: relative;
+           font-family: Helvetica, Arial, sans-serif;
+           /* background-image: url('background.jpg'); */
+           background: rgb(205, 226, 238);
+           background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
+       }
+       /* #background-img {
        position: fixed;
        top: 0;
        left: 0;
@@ -14,47 +17,47 @@
        height: 100;
        background-size: cover;
        background-position: center;
-       background-repeat: no-repeat;
+       background-repeat: repeat;
        z-index: -2;
        opacity: 0.8;
        border-width: 10px;
-   }
-   
-   a {
-       color: grey;
-       text-decoration: none;
-   }
-   
-   #logo {
-       display: block;
-       height: 100px;
-       width: 100px;
-       float: left;
-       opacity: 0.8;
-   }
-   
-   nav {
-       display: block;
-       width: calc(100% - 40px);
-       padding: 0px 10px 10px 10px;
-   }
-   
-   nav .nav-link {
-       float: right;
-       margin-top: 5px;
-       margin-right: 5px;
-       font-size: 20px;
-       line-height: 40px;
-       cursor: url('cursor-beeive-nav.svg'), auto;
-   }
-   
-   nav .button {
-       line-height: 1.5em;
-       background: rgb(224, 224, 224);
-       border: none;
-       border-radius: 40px;
-       padding: 5px;
-       outline: none;
-       text-align: center;
-       width: 10%;
-   }
+   } */
+       
+       a {
+           color: grey;
+           text-decoration: none;
+           cursor: url('cursor-beeive-nav.svg'), auto;
+       }
+       
+       #logo {
+           display: block;
+           height: 100px;
+           width: 100px;
+           float: left;
+           opacity: 0.8;
+       }
+       
+       nav {
+           display: block;
+           width: calc(100% - 40px);
+           padding: 0px 10px 50px 10px;
+       }
+       
+       nav .nav-link {
+           float: right;
+           margin-top: 5px;
+           margin-right: 5px;
+           font-size: 20px;
+           line-height: 40px;
+       }
+       
+       nav .button {
+           line-height: 1.5em;
+           background: rgb(224, 224, 224);
+           border: none;
+           border-radius: 40px;
+           padding: 5px;
+           outline: none;
+           text-align: center;
+           width: 10%;
+       }
