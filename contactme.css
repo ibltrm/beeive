@@ -11,11 +11,65 @@ body {
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
     background-color: #f6f6f6;
-    font-size: 100%;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    color: black;
+    margin: 20px;
+    padding: 20px;
 }
+
+
+/*.feature {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 672px;
+    position: relative;
+}*/
+
+.feature {
+    text-align: left;
+    max-width: 767px;
+}
+
+.feature h1 {
+    font-family: Arial, Helvetica, sans-serif font-size 22px;
+    color: #b8b8b8;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 0 0 10px 0;
+}
+
+.feature h2 {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 0 20px 0;
+}
+
+.feature a {
+    color: #000;
+    padding: 0 0 10px 0;
+    border-bottom: 2px solid #000;
+    max-width: 767px;
+}
+
+.feature a:hover {
+    padding: 0 0 10px 0;
+    border-bottom: 2px solid #000;
+}
+
+
+/*.main h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0 0 20px 0;
+}
+
+main h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}*/
 
 a {
     color: grey;
@@ -23,52 +77,118 @@ a {
     cursor: url('cursor-beeive-nav.svg'), auto;
 }
 
-#logo {
-    display: block;
-    height: 100px;
-    width: 100px;
+.header {
+    height: 80px;
+    width: 95%;
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+.header .logo a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #000;
+    letter-spacing: 5px;
+    display: inline-block;
     float: left;
-    opacity: 0.8;
 }
 
-nav {
-    display: block;
-    width: calc(100% - 40px);
-    padding: 0px 10px 50px 10px;
+
+/*.header .logo_img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 0;
+}*/
+
+#footer {
+    width: 95%;
+    position: absolute;
+    bottom: 0;
 }
 
-nav .nav-link {
-    float: right;
-    margin-top: 5px;
-    margin-right: 5px;
-    font-size: 20px;
-    line-height: 40px;
+#footer .info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #333;
 }
 
-nav .button {
-    line-height: 1.5em;
-    background: rgb(224, 224, 224);
-    border: none;
-    border-radius: 40px;
-    padding: 5px;
-    outline: none;
+#footer .info .content {
+    padding: 50px 0 40px 0;
+}
+
+#footer .info .detail {
+    position: relative;
+}
+
+#footer .info .copyright {
+    color: #888;
+    position: relative;
+    padding-bottom: 40px;
     text-align: center;
-    width: 10%;
 }
 
-footer {
-    width: 100%;
+
+/*ul {
+    list-style-type: none;
+    display: block;
+    font-size: 40px;
+}
+
+.contact {
+    display: block;
+    font-size: 25px;
+    text-align: left;
+}
+
+#email {
+    color: black;
+}*/
+
+.main h3 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 0 0 20px 0;
+}
+
+.main p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #000;
+}
+
+.main a {
+    color: #000;
+}
+
+.main a:hover {
+    border-bottom: 2px solid #000;
+    padding: 0 0 6px 0;
+}
+
+.social_media {
+    display: inline-block;
+    margin: 0 0 6px 0;
+}
+
+
+/*footer {
+    width: calc(100% - 40px);
     min-height: 30px;
-    margin: 20px;
     padding-top: 80px;
+    box-sizing: border-box;
 }
 
 footer .copyright {
     top: -8px;
-    margin: 5px;
     font-size: .90em;
     font-weight: none;
-    font-family: 'Pier Sans';
+    font-family: Helvetica, Arial, sans-serif;
     color: rgb(121, 121, 121);
 }
 
@@ -80,6 +200,7 @@ footer ul {
 
 footer ul li {
     display: inline-block;
+    box-sizing: border-box;
 }
 
 a.social {
@@ -97,7 +218,8 @@ a.instagram {
     background-image: url(instagram.png);
 }
 
-a.linkedin {
+
+/*a.linkedin {
     background-image: url(linkedin.png);
 }
 
@@ -107,8 +229,4 @@ a.github {
 
 a.social:hover {
     opacity: 1;
-}
-
-.clearfix {
-    clear: both;
-}
+}*/

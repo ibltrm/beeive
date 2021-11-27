@@ -61,3 +61,18 @@
            text-align: center;
            width: 10%;
        }
+       
+       footer {
+           width: calc(100% - 40px);
+           min-height: 30px;
+           padding-top: 80px;
+       }
+       
+       footer .copyright {
+           top: -8px;
+           margin: 5px;
+           font-size: .90em;
+           font-weight: none;
+           font-family: Helvetica, Arial, sans-serif;
+           color: rgb(121, 121, 121);
+       }
