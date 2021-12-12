@@ -48,10 +48,9 @@ header {
     position: relative;
 }
 
-p {
+.description p {
     margin: 0 auto 30px auto;
     width: 83.33333333%;
-    height: 600px;
     background-color: hotpink;
     font-size: 20px;
     /* 560/672 */
@@ -60,7 +59,7 @@ p {
     /* 320/496 */
 }
 
-h1 {
+.description h1 {
     width: 90%;
     /* 320/496 */
     font: 700 40px "ivypresto headline", serif;
@@ -81,7 +80,7 @@ h1 {
     background-size: cover;
     margin: 10px 0 0 16px;
     width: 800.125px;
-    height: 1923.500px;
+    height: 1000.500px;
 }
 
 .description-container {
