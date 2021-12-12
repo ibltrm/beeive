@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    cursor: url('cursor-beeive.svg'), auto;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
+    color: black;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+    cursor: url('cursor-beeive-nav.svg'), auto;
+}
+
+#logo_img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    float: left;
+    opacity: 0.8;
+}
+
+nav {
+    display: block;
+    width: calc(100% - 40px);
+    padding: 0px 10px 30px 10px;
+}
+
+.about-me {
+    display: flex;
+}
+
+.description {
+    text-align: left;
+    position: relative;
+}
+
+.portrait {
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.description-container {
+    display: flex;
+    margin: 32px 16px 0 0;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+}
+
+
+/*img {
+    filter: grayscale(0%);
+    transition: 1s;
+}
+
+img:hover {
+    filter: grayscale(100%);
+}*/
+
+footer {
+    width: calc(100% - 40px);
+    min-height: 30px;
+    padding-top: 30px;
+    color: #888;
+}
+
+footer .copyright {
+    color: #888;
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center;
+}

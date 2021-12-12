@@ -7,13 +7,12 @@ html {
 }
 
 body {
-    background: #fff;
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
-    background-color: #f6f6f6;
+    background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
     color: black;
-    margin: 20px;
-    padding: 20px;
+    /*margin: 20px;
+    padding: 20px;*/
 }
 
 
@@ -24,17 +23,34 @@ body {
     position: relative;
 }*/
 
+
+/*#flex1 #flex2 #flex3 .h3 {
+    display: inline;
+    position: relative;
+    width: 150px;
+}
+
+#flex1 #flex2 #flex3 .p {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    margin-right: 0;
+    padding-right: 0;
+}*/
+
 .feature {
     text-align: left;
     max-width: 767px;
+    margin-top: 70px;
 }
 
 .feature h1 {
-    font-family: Arial, Helvetica, sans-serif font-size 22px;
-    color: #b8b8b8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: rgb(85, 85, 85);
     text-transform: uppercase;
-    letter-spacing: 4px;
-    padding: 0 0 10px 0;
+    letter-spacing: 2px;
+    padding: 20px 0 10px 0;
 }
 
 .feature h2 {
@@ -77,31 +93,71 @@ a {
     cursor: url('cursor-beeive-nav.svg'), auto;
 }
 
-.header {
-    height: 80px;
-    width: 95%;
+#logo_img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    float: left;
+    opacity: 0.8;
+}
+
+nav {
+    display: block;
+    width: calc(100% - 40px);
+    padding: 0px 10px 50px 10px;
+}
+
+
+/*img {
+    position: relative;
+    left: 0;
+    margin-top: -5px;
+    margin-right: 500px;
+    background-color: #888;
+    max-width: 100%;
+}*/
+
+
+/*#logo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    float: left;
+    opacity: 0.8;
+}
+
+nav {
+    display: block;
+    width: calc(100% - 40px);
+    padding: 0px 10px 50px 10px;
+}
+
+#header {
+    height: 80px
+    width: auto;
     margin: 0 0 20px 0;
     position: relative;
 }
 
-.header .logo a {
+
+/*.header .logo a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     color: #000;
     letter-spacing: 5px;
     display: inline-block;
     float: left;
-}
+}*/
 
 
-/*.header .logo_img {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
+/*#logo_img {
     position: relative;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    top: 0;
     left: 0;
+    background-color: pink;
 }*/
 
 #footer {
@@ -131,29 +187,47 @@ a {
     text-align: center;
 }
 
-
-/*ul {
-    list-style-type: none;
-    display: block;
-    font-size: 40px;
+.main {
+    position: relative;
+    top: 50px;
+    justify-content: space-between;
+    background: rgb(189, 218, 247);
+    border-radius: 75px;
+    margin-top: 5px;
+    padding-bottom: 15px
 }
 
-.contact {
-    display: block;
-    font-size: 25px;
-    text-align: left;
+.flex1 {
+    display: inline-block;
+    float: left;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-#email {
-    color: black;
-}*/
+.flex2 {
+    display: inline-block;
+    float: center;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+.flex3 {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
 
 .main h3 {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     letter-spacing: 2px;
-    padding: 0 0 20px 0;
+    padding: 0 0 0 0;
 }
 
 .main p {
@@ -173,60 +247,12 @@ a {
 
 .social_media {
     display: inline-block;
-    margin: 0 0 6px 0;
+    margin-top: 3px;
 }
 
-
-/*footer {
-    width: calc(100% - 40px);
-    min-height: 30px;
-    padding-top: 80px;
-    box-sizing: border-box;
+@media screen and (min-width: 730px) {
+    main content {
+        display: block;
+        width: 60%;
+    }
 }
-
-footer .copyright {
-    top: -8px;
-    font-size: .90em;
-    font-weight: none;
-    font-family: Helvetica, Arial, sans-serif;
-    color: rgb(121, 121, 121);
-}
-
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-footer ul li {
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-a.social {
-    display: inline-block;
-    text-indent: -9999px;
-    margin-left: 5px;
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
-    opacity: .5;
-    transition: all .25s;
-}
-
-a.instagram {
-    background-image: url(instagram.png);
-}
-
-
-/*a.linkedin {
-    background-image: url(linkedin.png);
-}
-
-a.github {
-    background-image: url(github.png);
-}
-
-a.social:hover {
-    opacity: 1;
-}*/

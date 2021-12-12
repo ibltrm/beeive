@@ -1,78 +1,107 @@
-       html {
-           cursor: url('cursor-beeive.svg'), auto;
-       }
-       
-       body {
-           position: relative;
-           font-family: Helvetica, Arial, sans-serif;
-           /* background-image: url('background.jpg'); */
-           background: rgb(205, 226, 238);
-           background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
-       }
-       /* #background-img {
-       position: fixed;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 100;
-       background-size: cover;
-       background-position: center;
-       background-repeat: repeat;
-       z-index: -2;
-       opacity: 0.8;
-       border-width: 10px;
-   } */
-       
-       a {
-           color: grey;
-           text-decoration: none;
-           cursor: url('cursor-beeive-nav.svg'), auto;
-       }
-       
-       #logo {
-           display: block;
-           height: 100px;
-           width: 100px;
-           float: left;
-           opacity: 0.8;
-       }
-       
-       nav {
-           display: block;
-           width: calc(100% - 40px);
-           padding: 0px 10px 50px 10px;
-       }
-       
-       nav .nav-link {
-           float: right;
-           margin-top: 5px;
-           margin-right: 5px;
-           font-size: 20px;
-           line-height: 40px;
-       }
-       
-       nav .button {
-           line-height: 1.5em;
-           background: rgb(224, 224, 224);
-           border: none;
-           border-radius: 40px;
-           padding: 5px;
-           outline: none;
-           text-align: center;
-           width: 10%;
-       }
-       
-       footer {
-           width: calc(100% - 40px);
-           min-height: 30px;
-           padding-top: 80px;
-       }
-       
-       footer .copyright {
-           top: -8px;
-           margin: 5px;
-           font-size: .90em;
-           font-weight: none;
-           font-family: Helvetica, Arial, sans-serif;
-           color: rgb(121, 121, 121);
-       }
+    html {
+        cursor: url('cursor-beeive.svg'), auto;
+    }
+    
+    body {
+        position: relative;
+        font-family: Helvetica, Arial, sans-serif;
+        /* background-image: url('background.jpg'); */
+        background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
+    }
+    
+    a {
+        color: rgb(0, 0, 0);
+        text-decoration: underline;
+        cursor: url('cursor-beeive-nav.svg'), auto;
+        text-underline-position: under;
+    }
+    
+    #logo {
+        display: block;
+        height: 100px;
+        width: 100px;
+        float: left;
+        opacity: 0.8;
+    }
+    
+    nav {
+        display: block;
+        width: calc(100% - 40px);
+        padding: 0px 10px 50px 10px;
+    }
+    
+    nav .nav-link {
+        float: right;
+        margin-top: 5px;
+        margin-right: 5px;
+        font-size: 22px;
+        line-height: 40px;
+    }
+    
+    nav .button {
+        line-height: 1.5em;
+        border: none;
+        border-radius: 40px;
+        padding: 5px;
+        outline: none;
+        text-align: center;
+        width: 10%;
+    }
+    
+    section {
+        margin-top: 90px;
+        margin-left: 10px;
+    }
+    
+    section h1 {
+        color: rgb(66, 66, 66);
+        font-family: ivypresto, serif;
+        font-size: 62px;
+    }
+    
+    section h2 {
+        padding-top: 36px;
+        color: rgb(66, 66, 66);
+        font-family: ivypresto, serif;
+        font-size: 36px;
+    }
+    
+    section p {
+        text-align: left;
+        font-size: 26px;
+        color: rgb(32, 32, 32);
+        max-width: 1080px;
+        font-family: ivypresto, serif;
+    }
+    
+    section a {
+        text-decoration: none;
+    }
+    
+    section a:hover {
+        border-bottom: 2px solid rgb(32, 32, 32);
+    }
+    
+    section a:link {
+        font-weight: bold;
+        color: rgb(32, 32, 32);
+    }
+    
+    footer {
+        width: calc(100% - 40px);
+        min-height: 30px;
+        padding-top: 30px;
+    }
+    
+    footer .copyright {
+        color: #888;
+        position: relative;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    @media screen and (max-width: 1089px) {
+        nav .nav-link {
+            width: 20%;
+        }
+    }
