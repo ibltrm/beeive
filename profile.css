@@ -8,8 +8,10 @@ html {
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
+    background: url(background.jpg);
+    /*background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);*/
     color: black;
+    font-family: grad, serif;
 }
 
 a {
@@ -32,38 +34,81 @@ nav {
     padding: 0px 10px 30px 10px;
 }
 
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
 .about-me {
     display: flex;
+    position: relative;
+}
+
+p {
+    margin: 0 auto 30px auto;
+    width: 83.33333333%;
+    height: 600px;
+    background-color: hotpink;
+    font-size: 20px;
+    /* 560/672 */
+    /*p {
+    width: 64.51612903%;
+    /* 320/496 */
+}
+
+h1 {
+    width: 90%;
+    /* 320/496 */
+    font: 700 40px "ivypresto headline", serif;
+    line-height: 1.2727272727em;
+    margin: 0 auto 64px auto;
+    background-color: hotpink;
 }
 
 .description {
     text-align: left;
     position: relative;
+    z-index: 1;
+    height: 784px;
 }
 
 .portrait {
-    width: auto;
-    max-width: 300px;
-    max-height: 300px;
+    /*background: url(main_image.jpg) center;*/
+    background-size: cover;
+    margin: 10px 0 0 16px;
+    width: 800.125px;
+    height: 1923.500px;
 }
 
 .description-container {
+    background-color: rgb(169, 179, 176);
+    background-image: url();
+    background-position: left top;
+    background-size: auto auto;
+    background-repeat: no-repeat;
     display: flex;
-    margin: 32px 16px 0 0;
-    padding: 20px;
-    width: 50%;
+    margin: 10px 16px 0 40px;
+    padding: 88px 6.395348837%;
+    /* 88/1376 */
+    width: 49.7%;
     position: relative;
+    width: 800.125px;
+    height: 1070px;
 }
 
-
-/*img {
-    filter: grayscale(0%);
+img {
+    max-width: 100%;
+    filter: grayscale(30%);
     transition: 1s;
 }
 
 img:hover {
-    filter: grayscale(100%);
-}*/
+    filter: grayscale(0%);
+}
 
 footer {
     width: calc(100% - 40px);
