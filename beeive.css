@@ -88,15 +88,15 @@
     }
     
     footer {
+        display: block;
         width: calc(100% - 40px);
-        min-height: 30px;
-        padding-top: 30px;
+        padding: 60px 0 0 0;
     }
     
     footer .copyright {
         color: #888;
         position: relative;
-        padding-bottom: 10px;
+        padding-bottom: 0;
         text-align: center;
     }
     
