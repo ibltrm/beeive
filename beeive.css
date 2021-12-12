@@ -90,7 +90,7 @@
     footer {
         display: block;
         width: calc(100% - 40px);
-        padding: 60px 0 0 0;
+        padding: 55px 0 0 0;
     }
     
     footer .copyright {
