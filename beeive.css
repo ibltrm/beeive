@@ -1,5 +1,6 @@
     html {
         cursor: url('cursor-beeive.svg'), auto;
+        overflow: hidden;
     }
     
     body {
