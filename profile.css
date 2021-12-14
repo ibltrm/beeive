@@ -8,8 +8,8 @@ html {
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background: url(background.jpg);
-    /*background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);*/
+    /*background: url(background.jpg);*/
+    background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
     color: black;
     font-family: grad, serif;
 }
@@ -22,16 +22,25 @@ a {
 
 #logo_img {
     display: block;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     float: left;
     opacity: 0.8;
 }
 
 nav {
     display: block;
-    width: calc(100% - 40px);
+    width: calc(100% - 80px);
     padding: 0px 10px 30px 10px;
+}
+
+nav h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 30px;
+    color: rgb(119, 128, 136);
+    font-family: ivypresto, serif;
 }
 
 header {
@@ -49,9 +58,8 @@ header {
 }
 
 .description p {
-    margin: 0 auto 30px auto;
+    margin: 0px auto 40px auto;
     width: 83.33333333%;
-    background-color: hotpink;
     font-size: 20px;
     /* 560/672 */
     /*p {
@@ -62,10 +70,9 @@ header {
 .description h1 {
     width: 90%;
     /* 320/496 */
-    font: 700 40px "ivypresto headline", serif;
+    font: 700 32px "ivypresto headline", serif;
     line-height: 1.2727272727em;
-    margin: 0 auto 64px auto;
-    background-color: hotpink;
+    margin: 0 auto 30px auto;
 }
 
 .description {
@@ -84,7 +91,7 @@ header {
 }
 
 .description-container {
-    background-color: rgb(169, 179, 176);
+    background-color: rgba(230, 231, 231, 0.774);
     background-image: url();
     background-position: left top;
     background-size: auto auto;
@@ -99,6 +106,15 @@ header {
     height: 1070px;
 }
 
+.skills h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+li {
+    list-style: none;
+}
+
 img {
     max-width: 100%;
     filter: grayscale(30%);
@@ -110,7 +126,7 @@ img:hover {
 }
 
 footer {
-    width: calc(100% - 40px);
+    width: 100%;
     min-height: 30px;
     padding-top: 30px;
     color: #888;
@@ -121,4 +137,5 @@ footer .copyright {
     position: relative;
     padding-bottom: 10px;
     text-align: center;
+    font-size: 18px;
 }

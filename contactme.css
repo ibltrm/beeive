@@ -15,29 +15,6 @@ body {
     padding: 20px;*/
 }
 
-
-/*.feature {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 672px;
-    position: relative;
-}*/
-
-
-/*#flex1 #flex2 #flex3 .h3 {
-    display: inline;
-    position: relative;
-    width: 150px;
-}
-
-#flex1 #flex2 #flex3 .p {
-    display: inline-block;
-    position: relative;
-    width: 150px;
-    margin-right: 0;
-    padding-right: 0;
-}*/
-
 .feature {
     text-align: left;
     max-width: 767px;
@@ -45,9 +22,10 @@ body {
 }
 
 .feature h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: ivypresto, serif;
+    font-weight: bold;
     font-size: 40px;
-    color: rgb(85, 85, 85);
+    color: rgb(66, 66, 66);
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 20px 0 10px 0;
@@ -71,22 +49,6 @@ body {
     border-bottom: 2px solid #000;
 }
 
-
-/*.main h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 0 0 20px 0;
-}
-
-main h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}*/
-
 a {
     color: grey;
     text-decoration: none;
@@ -95,8 +57,8 @@ a {
 
 #logo_img {
     display: block;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     float: left;
     opacity: 0.8;
 }
@@ -106,59 +68,6 @@ nav {
     width: calc(100% - 40px);
     padding: 0px 10px 50px 10px;
 }
-
-
-/*img {
-    position: relative;
-    left: 0;
-    margin-top: -5px;
-    margin-right: 500px;
-    background-color: #888;
-    max-width: 100%;
-}*/
-
-
-/*#logo {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    float: left;
-    opacity: 0.8;
-}
-
-nav {
-    display: block;
-    width: calc(100% - 40px);
-    padding: 0px 10px 50px 10px;
-}
-
-#header {
-    height: 80px
-    width: auto;
-    margin: 0 0 20px 0;
-    position: relative;
-}
-
-
-/*.header .logo a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    color: #000;
-    letter-spacing: 5px;
-    display: inline-block;
-    float: left;
-}*/
-
-
-/*#logo_img {
-    position: relative;
-    display: inline-block;
-    height: 150px;
-    width: 150px;
-    top: 0;
-    left: 0;
-    background-color: pink;
-}*/
 
 #footer {
     width: 95%;
@@ -185,6 +94,7 @@ nav {
     position: relative;
     padding-bottom: 40px;
     text-align: center;
+    font-size: 18px;
 }
 
 .main {

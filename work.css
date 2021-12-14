@@ -1,48 +1,75 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    cursor: url('cursor-beeive.svg'), auto;
-}
-
-body {
-    text-align: center;
-    font-family: Helvetica, Arial, sans-serif;
-    background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
-    color: black;
-}
-
-a {
-    color: grey;
-    text-decoration: none;
-    cursor: url('cursor-beeive-nav.svg'), auto;
-}
-
-#logo_img {
-    display: block;
-    height: 100px;
-    width: 100px;
-    float: left;
-    opacity: 0.8;
-}
-
-nav {
-    display: block;
-    width: calc(100% - 40px);
-    padding: 0px 10px 30px 10px;
-}
-
-footer {
-    width: calc(100% - 40px);
-    min-height: 30px;
-    padding-top: 30px;
-    color: #888;
-}
-
-footer .copyright {
-    color: #888;
-    position: relative;
-    padding-bottom: 10px;
-    text-align: center;
-}
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            cursor: url('cursor-beeive.svg'), auto;
+        }
+        
+        body {
+            text-align: center;
+            font-family: Helvetica, Arial, sans-serif;
+            background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
+            color: black;
+        }
+        
+        a {
+            color: grey;
+            text-decoration: none;
+            cursor: url('cursor-beeive-nav.svg'), auto;
+        }
+        
+        #logo_img {
+            display: block;
+            height: 80px;
+            width: 80px;
+            float: left;
+            opacity: 0.8;
+            margin-top: 0;
+        }
+        
+        nav {
+            display: block;
+            width: calc(100% - 80px);
+            padding: 0px 10px 30px 10px;
+        }
+        
+        nav h1 {
+            margin: 0;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 30px;
+            color: rgb(119, 128, 136);
+            font-family: ivypresto, serif;
+        }
+        
+        table {
+            margin-top: 8px;
+            margin-left: 0;
+        }
+        
+        tr {
+            background: rgb(216, 230, 241);
+            display: inline-block;
+            text-align: center;
+            width: 17em;
+            height: 17em;
+            margin: .5em;
+            padding: 1px;
+            position: relative;
+        }
+        
+        footer {
+            width: 100%;
+            min-height: 30px;
+            padding-top: 10px;
+            color: #888;
+        }
+        
+        footer .copyright {
+            color: #888;
+            position: relative;
+            padding-bottom: 3px;
+            text-align: center;
+            font-size: 18px;
+        }

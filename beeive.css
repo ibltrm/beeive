@@ -10,16 +10,17 @@
     }
     
     a {
-        color: rgb(0, 0, 0);
         text-decoration: underline;
         cursor: url('cursor-beeive-nav.svg'), auto;
         text-underline-position: under;
+        color: rgb(119, 128, 136);
+        font-family: ivypresto, serif;
     }
     
     #logo {
         display: block;
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
         float: left;
         opacity: 0.8;
     }
@@ -35,6 +36,7 @@
         margin-top: 5px;
         margin-right: 5px;
         font-size: 22px;
+        font-weight: bold;
         line-height: 40px;
     }
     
@@ -99,9 +101,10 @@
         position: relative;
         padding-bottom: 0;
         text-align: center;
+        font-size: 18px;
     }
     
-    @media screen and (max-width: 1089px) {
+    @media screen and (max-width: 1163px) {
         nav .nav-link {
             width: 20%;
         }
