@@ -1,10 +1,10 @@
         * {
             box-sizing: border-box;
-            overflow: hidden;
         }
         
         html {
             cursor: url('cursor-beeive.svg'), auto;
+            overflow: hidden;
         }
         
         body {
