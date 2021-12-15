@@ -15,7 +15,7 @@
         cursor: url('cursor-beeive-nav.svg'), auto;
         text-underline-position: under;
         color: rgb(119, 128, 136);
-        font-family: ivypresto, serif;
+        font-family: ivypresto, sans-serif;
     }
     
     #logo {
@@ -101,8 +101,10 @@
         color: #888;
         position: relative;
         padding-bottom: 0;
+        margin-bottom: 0;
         text-align: center;
         font-size: 18px;
+        justify-content: end;
     }
     
     @media screen and (max-width: 1163px) {
