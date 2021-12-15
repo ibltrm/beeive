@@ -70,7 +70,24 @@ nav {
     padding: 0px 10px 50px 10px;
 }
 
-#footer {
+footer {
+    display: block;
+    width: 100%;
+    padding: 59px 0 0 0;
+    margin-bottom: 0;
+}
+
+footer .copyright {
+    color: #888;
+    position: relative;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/*#footer {
+    display: block;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -83,7 +100,7 @@ nav {
 }
 
 #footer .info .content {
-    padding: 50px 0 40px 0;
+    padding: 50px 0 60px 0;
 }
 
 #footer .info .detail {
@@ -93,10 +110,10 @@ nav {
 #footer .info .copyright {
     color: #888;
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     text-align: center;
     font-size: 18px;
-}
+}*/
 
 .main {
     position: relative;

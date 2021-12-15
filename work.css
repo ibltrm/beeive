@@ -4,7 +4,7 @@
         
         html {
             cursor: url('cursor-beeive.svg'), auto;
-            overflow: hidden;
+            /*overflow: hidden;*/
         }
         
         body {
@@ -44,8 +44,12 @@
             font-family: ivypresto, serif;
         }
         
+        header {
+            padding-bottom: 0;
+        }
+        
         table {
-            margin-top: 8px;
+            margin-top: 5px;
             margin-left: 0;
         }
         
@@ -63,7 +67,7 @@
         footer {
             width: 100%;
             min-height: 30px;
-            padding-top: 10px;
+            padding-top: 0;
             color: #888;
         }
         
