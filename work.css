@@ -49,8 +49,9 @@
         }
         
         table {
-            margin-top: 5px;
+            margin-top: 3px;
             margin-left: 0;
+            padding-bottom: 0;
         }
         
         tr {
@@ -69,12 +70,13 @@
             min-height: 30px;
             padding-top: 0;
             color: #888;
+            p
         }
         
         footer .copyright {
             color: #888;
             position: relative;
-            padding-bottom: 3px;
+            padding-bottom: 5px;
             text-align: center;
             font-size: 18px;
         }
