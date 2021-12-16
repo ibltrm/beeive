@@ -11,6 +11,7 @@
             font-family: Helvetica, Arial, sans-serif;
             background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
             color: black;
+            margin-bottom: 0;
         }
         
         a {
@@ -21,8 +22,8 @@
         
         #logo_img {
             display: block;
-            height: 80px;
-            width: 80px;
+            height: 60px;
+            width: 60px;
             float: left;
             opacity: 0.8;
             margin-top: 0;
@@ -30,14 +31,15 @@
         
         nav {
             display: block;
-            width: calc(100% - 80px);
+            width: 100%;
             padding: 0px 10px 30px 10px;
         }
         
         nav h1 {
             margin: 0;
             text-align: center;
-            padding-top: 15px;
+            padding-top: 10px;
+            padding-right: 60px;
             font-size: 30px;
             color: rgb(119, 128, 136);
             font-family: ivypresto, serif;
@@ -74,7 +76,8 @@
         footer .copyright {
             color: #888;
             position: relative;
-            padding-bottom: 5px;
+            padding-bottom: 0;
             text-align: center;
             font-size: 18px;
+            margin-bottom: 0;
         }

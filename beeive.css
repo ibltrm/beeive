@@ -7,6 +7,7 @@
         font-family: Helvetica, Arial, sans-serif;
         /* background-image: url('background.jpg'); */
         background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
+        margin-bottom: 0;
     }
     
     a {
@@ -15,12 +16,13 @@
         text-underline-position: under;
         color: rgb(119, 128, 136);
         font-family: ivypresto, sans-serif;
+        font-size: 22px;
     }
     
     #logo {
         display: block;
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
         float: left;
         opacity: 0.8;
     }
@@ -28,7 +30,7 @@
     nav {
         display: block;
         width: calc(100% - 40px);
-        padding: 0px 10px 50px 10px;
+        padding: 0px 10px 30px 10px;
     }
     
     nav .nav-link {
@@ -74,6 +76,7 @@
         color: rgb(32, 32, 32);
         max-width: 1080px;
         font-family: ivypresto, serif;
+        margin-bottom: 36px;
     }
     
     section a {
@@ -92,8 +95,8 @@
     footer {
         display: block;
         width: 100%;
-        padding: 60px 0 0 0;
-        margin-bottom: 0;
+        padding: 50px 0 0 0;
+        margin-bottom: 5px;
     }
     
     footer .copyright {

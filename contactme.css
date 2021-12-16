@@ -11,14 +11,13 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
     color: black;
-    /*margin: 20px;
-    padding: 20px;*/
+    margin-bottom: 0;
 }
 
 .feature {
     text-align: left;
     max-width: 767px;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .feature h1 {
@@ -57,31 +56,32 @@ a {
 
 #logo_img {
     display: block;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     float: left;
     opacity: 0.8;
 }
 
 nav {
     display: block;
-    width: calc(100% - 40px);
-    padding: 0px 10px 50px 10px;
+    width: 100%;
+    padding: 0px 10px 30px 10px;
 }
 
 footer {
-    display: block;
     width: 100%;
-    padding: 59px 0 0 0;
-    margin-bottom: 0;
+    min-height: 30px;
+    padding-top: 0;
+    color: #888;
 }
 
 footer .copyright {
     color: #888;
     position: relative;
-    padding-bottom: 0;
+    padding-bottom: 10px;
     text-align: center;
     font-size: 18px;
+    margin-bottom: 0;
 }
 
 
@@ -116,37 +116,37 @@ footer .copyright {
 
 .main {
     position: relative;
-    top: 50px;
+    top: 30px;
     justify-content: space-between;
     background: rgb(189, 218, 247);
     border-radius: 75px;
     margin-top: 5px;
-    padding-bottom: 15px
+    margin-bottom: 109.5px;
 }
 
 .flex1 {
     display: inline-block;
     float: left;
     margin-left: 30px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .flex2 {
     display: inline-block;
     float: center;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .flex3 {
     display: inline-block;
     float: right;
     margin-right: 30px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .main h3 {
