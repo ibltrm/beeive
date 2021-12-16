@@ -3,7 +3,7 @@
         }
         
         html {
-            cursor: url('cursor-beeive.svg'), auto;
+            cursor: url('cursor-beeive.png'), auto;
         }
         
         body {
@@ -17,7 +17,7 @@
         a {
             color: grey;
             text-decoration: none;
-            cursor: url('cursor-beeive-nav.svg'), auto;
+            cursor: url('cursor-beeive-nav.png'), auto;
         }
         
         #logo_img {

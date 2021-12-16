@@ -3,11 +3,11 @@
 }
 
 html {
-    cursor: url('cursor-beeive.svg'), auto;
+    cursor: url('cursor-beeive.png'), auto;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: garamond, serif;
     /*background: url(background.jpg);*/
     background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
     color: black;
@@ -17,7 +17,7 @@ body {
 a {
     color: grey;
     text-decoration: none;
-    cursor: url('cursor-beeive-nav.svg'), auto;
+    cursor: url('cursor-beeive-nav.png'), auto;
 }
 
 #logo_img {
@@ -41,7 +41,6 @@ nav h1 {
     padding-right: 60px;
     font-size: 30px;
     color: rgb(119, 128, 136);
-    font-family: ivypresto, serif;
 }
 
 header {
@@ -61,7 +60,7 @@ header {
 .description p {
     margin: 0px auto 40px auto;
     width: 83.33333333%;
-    font-size: 20px;
+    font-size: 23px;
     text-align: justify;
     /* 560/672 */
     /*p {
@@ -72,7 +71,7 @@ header {
 .description h1 {
     width: 90%;
     /* 320/496 */
-    font: 700 32px "ivypresto headline", serif;
+    font: 700 32px garamond, serif;
     line-height: 1.2727272727em;
     margin: 0 auto 30px auto;
 }
@@ -115,8 +114,12 @@ header {
 
 li {
     list-style: none;
-    font-size: 20px;
+    font-size: 23px;
     margin-bottom: 40px;
+}
+
+ul {
+    margin: 0;
 }
 
 .location h1 {
@@ -125,17 +128,18 @@ li {
 }
 
 .location p {
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .button {
     text-align: center;
     width: 100%;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: sans-serif;
+}
+
+.button img {
+    width: 50%;
 }
 
 img {

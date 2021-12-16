@@ -1,5 +1,5 @@
     html {
-        cursor: url('cursor-beeive.svg'), auto;
+        cursor: url('cursor-beeive.png'), auto;
     }
     
     body {
@@ -12,7 +12,7 @@
     
     a {
         text-decoration: underline;
-        cursor: url('cursor-beeive-nav.svg'), auto;
+        cursor: url('cursor-beeive-nav.png'), auto;
         text-underline-position: under;
         color: rgb(119, 128, 136);
         font-family: ivypresto, sans-serif;

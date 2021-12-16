@@ -3,7 +3,7 @@
 }
 
 html {
-    cursor: url('cursor-beeive.svg'), auto;
+    cursor: url('cursor-beeive.png'), auto;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 .feature h1 {
-    font-family: ivypresto, serif;
+    font-family: "ivypresto headline", serif;
     font-weight: bold;
     font-size: 40px;
     color: rgb(66, 66, 66);
@@ -51,7 +51,7 @@ body {
 a {
     color: grey;
     text-decoration: none;
-    cursor: url('cursor-beeive-nav.svg'), auto;
+    cursor: url('cursor-beeive-nav.png'), auto;
 }
 
 #logo_img {
