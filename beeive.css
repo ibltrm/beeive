@@ -8,6 +8,7 @@
         /* background-image: url('background.jpg'); */
         background: linear-gradient(90deg, rgba(205, 226, 238, 1) 21%, rgba(187, 210, 223, 1) 82%);
         margin-bottom: 0;
+        /*line-height: 1.5;*/
     }
     
     a {
@@ -112,5 +113,8 @@
     @media screen and (max-width: 1163px) {
         nav .nav-link {
             width: 20%;
+        }
+        .wrap {
+            min-height: calc(100vh - 110px);
         }
     }
