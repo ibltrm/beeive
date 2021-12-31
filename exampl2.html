@@ -2,62 +2,63 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Overflow</title>
-   <style>
-      * {
-         box-sizing: border-box;
-      }
-
-      html {
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         padding: 0;
-         margin: 0;
-      }
-
-      body {
-         height: 100%;
-         width: 100%;
-         padding: 0;
-         margin: 0;
-      }
-
-      #header {
-         text-align: center;
-         background: red;
-         color: white;
-         height: 20px;
-      }
-
-      #content {
-         background: green;
-         height: calc(100% - 40px);
-         overflow: auto;
-      }
-
-      #footer {
-         text-align: center;
-         background: blue;
-         color: white;
-         height: 20px;
-         padding: 0;
-         margin: 0;
-      }
-   </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #header {
+            text-align: center;
+            background: red;
+            color: white;
+            height: 20px;
+        }
+        
+        #content {
+            background: green;
+            height: calc(100% - 40px);
+            overflow: auto;
+        }
+        
+        #footer {
+            text-align: center;
+            background: blue;
+            color: white;
+            height: 20px;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
-   <header id="header">HEADER</header>
-   <div id="content">
-      <!-- Really long paragraph here -->
-   </div>
-   <footer id="footer">FOOTER</footer>
+    <header id="header">HEADER</header>
+    <div id="content">
+        <!-- Really long paragraph here -->
+    </div>
+    <footer id="footer">FOOTER</footer>
 </body>
 
 </html>
@@ -80,8 +81,8 @@
 <!-- Ignore Below -->
 
 <script>
-   const content = document.getElementById('content');
-   content.innerHTML = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+    const content = document.getElementById('content');
+    content.innerHTML = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
 
 Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. 
 
@@ -124,30 +125,30 @@ Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sa
 `;
 
 
-const trackerEl = document.createElement('div');
-const styles = {
-   position: 'fixed',
-   background: 'black',
-   color: 'white',
-   width: '100px',
-   height: '100px',
-   top: 'calc(50% - 50px)',
-   left: '0',
-   'border-radius': '5px',
-   'text-align': 'center',
-   'font-size': '10px',
-   'display': 'flex',
-   'flex-direction': 'column',
-   'justify-content': 'space-between',
-   'align-items': 'center',
-   'box-shadow': '0 0 5px black, 0 0 5px black'
-};
+    const trackerEl = document.createElement('div');
+    const styles = {
+        position: 'fixed',
+        background: 'black',
+        color: 'white',
+        width: '100px',
+        height: '100px',
+        top: 'calc(50% - 50px)',
+        left: '0',
+        'border-radius': '5px',
+        'text-align': 'center',
+        'font-size': '10px',
+        'display': 'flex',
+        'flex-direction': 'column',
+        'justify-content': 'space-between',
+        'align-items': 'center',
+        'box-shadow': '0 0 5px black, 0 0 5px black'
+    };
 
-for (const prop in styles) {
-   trackerEl.style[prop] = styles[prop];
-}
+    for (const prop in styles) {
+        trackerEl.style[prop] = styles[prop];
+    }
 
-trackerEl.innerHTML = `
+    trackerEl.innerHTML = `
    <div>
       <div>WINDOW</div>
       <div id="window_size"></div>
@@ -166,25 +167,24 @@ trackerEl.innerHTML = `
    </div>
 `;
 
-document.body.appendChild(trackerEl);
+    document.body.appendChild(trackerEl);
 
-const window_size = document.getElementById('window_size');
-const header_el = document.getElementById('header');
-const header_size = document.getElementById('header_size');
-const content_el = document.getElementById('content');
-const content_size = document.getElementById('content_size');
-const footer_el = document.getElementById('footer');
-const footer_size = document.getElementById('footer_size');
+    const window_size = document.getElementById('window_size');
+    const header_el = document.getElementById('header');
+    const header_size = document.getElementById('header_size');
+    const content_el = document.getElementById('content');
+    const content_size = document.getElementById('content_size');
+    const footer_el = document.getElementById('footer');
+    const footer_size = document.getElementById('footer_size');
 
-const calculatSizeHandler = () => {
-   window_size.innerHTML = `${window.innerWidth} x ${window.innerHeight}`;
-   footer_size.innerHTML = `${Math.round(footer_el.getBoundingClientRect().width)} x ${Math.round(footer_el.getBoundingClientRect().height)}`;
-   header_size.innerHTML = `${Math.round(header_el.getBoundingClientRect().width)} x ${Math.round(header_el.getBoundingClientRect().height)}`;
-   content_size.innerHTML = `${Math.round(content_el.getBoundingClientRect().width)} x ${Math.round(content_el.getBoundingClientRect().height)}`;
-}
+    const calculatSizeHandler = () => {
+        window_size.innerHTML = `${window.innerWidth} x ${window.innerHeight}`;
+        footer_size.innerHTML = `${Math.round(footer_el.getBoundingClientRect().width)} x ${Math.round(footer_el.getBoundingClientRect().height)}`;
+        header_size.innerHTML = `${Math.round(header_el.getBoundingClientRect().width)} x ${Math.round(header_el.getBoundingClientRect().height)}`;
+        content_size.innerHTML = `${Math.round(content_el.getBoundingClientRect().width)} x ${Math.round(content_el.getBoundingClientRect().height)}`;
+    }
 
-calculatSizeHandler();
+    calculatSizeHandler();
 
-window.addEventListener('resize', calculatSizeHandler);
-
+    window.addEventListener('resize', calculatSizeHandler);
 </script>
