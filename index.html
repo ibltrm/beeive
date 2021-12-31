@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Even out two elements</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      html {
+         width: 100%;
+         height: 100%;
+      }
+
+      body {
+         width: 100%;
+         height: 100%;
+      }
+
+      #wrapper {
+         background: lightgreen;
+         display: flex;
+         flex-direction: row;
+      }
+
+      .child {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         /* flex-grow: 1; */
+         width: 50%;
+         border: 1px solid red;
+      }
+
+      #profile_image {
+         width: 100%;
+      }
+
+      @media only screen and (max-width: 600px) {
+         #wrapper {
+            flex-direction: column;
+         }
+
+         .child {
+            width: 100%;
+         }
+      }
+
+     
+   </style>
+</head>
+
+<body>
+   <div id="wrapper">
+      <div class="child">
+         CONTENT
+      </div>
+      <div class="child">
+         <img id='profile_image' src="profile-image.png" alt="Alt text">
+      </div>
+   </div>
+</body>
+
+</html>
