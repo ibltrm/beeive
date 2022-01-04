@@ -168,10 +168,10 @@
         .main p {
             font-size: 17px;
         }
-        /*.main a {
+        .main a {
             text-decoration: underline;
             text-underline-position: under;
-        }*/
+        }
     }
     
     @media screen and (max-width: 570px) {
