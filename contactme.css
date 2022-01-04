@@ -174,7 +174,7 @@
         }
     }
     
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 570px) {
         .footer .copyright {
             font-size: 15px;
         }
