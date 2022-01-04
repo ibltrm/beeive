@@ -158,7 +158,7 @@
         }
     }
     
-    @media screen and (max-width: 490px) {
+    @media screen and (max-width: 540px) {
         .feature h1 {
             font-size: 32px;
         }
@@ -177,5 +177,11 @@
     @media screen and (max-width: 570px) {
         .footer .copyright {
             font-size: 15px;
+        }
+    }
+    
+    @media screen and (max-width: 890px) {
+        .main.content {
+            padding-top: 8px;
         }
     }
