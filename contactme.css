@@ -156,9 +156,6 @@
             margin-top: 40px;
             margin-bottom: 40px;
         }
-        .footer .copyright {
-            font-family: 15px;
-        }
     }
     
     @media screen and (max-width: 490px) {
@@ -174,5 +171,11 @@
         .main a {
             text-decoration: underline;
             text-underline-position: under;
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .footer .copyright {
+            font-size: 15px;
         }
     }
