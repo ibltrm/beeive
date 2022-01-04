@@ -373,3 +373,9 @@
             border-radius: 40px;
         }
     }
+    
+    @media only screen and (orientation: landscape) and (max-width: 812px) {
+        .button img {
+            width: 30%
+        }
+    }
