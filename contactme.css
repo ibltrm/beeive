@@ -157,3 +157,19 @@
             margin-bottom: 40px;
         }
     }
+    
+    @media screen and (max-width: 490px) {
+        .feature h1 {
+            font-size: 32px;
+        }
+        .feature h2 {
+            font-size: 22px;
+        }
+        .main p {
+            font-size: 17px;
+        }
+        .main a {
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+    }

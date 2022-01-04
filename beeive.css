@@ -1,6 +1,7 @@
     html {
         cursor: url('cursor-beeive.png'), auto;
         height: 100%;
+        width: 100%;
     }
     
     body {
@@ -34,18 +35,18 @@
         width: 60px;
         float: left;
         opacity: 0.8;
+        position: absolute;
     }
     
     nav {
         display: block;
-        width: calc(100% - 40px);
-        padding: 0px 10px 30px 10px;
+        width: calc(100% - 30px);
+        padding: 0px 0px 30px 10px;
     }
     
     nav .nav-link {
         float: right;
         margin-top: 5px;
-        margin-right: 5px;
         font-size: 22px;
         font-weight: bold;
         line-height: 40px;
@@ -53,12 +54,9 @@
     
     nav .button {
         line-height: 1.5em;
-        border: none;
-        border-radius: 40px;
-        padding: 5px;
+        padding: 5px 15px 5px 5px;
         outline: none;
         text-align: center;
-        width: 10%;
     }
     
     section {
@@ -118,11 +116,55 @@
         padding-bottom: 10px;
         margin-bottom: 0;
     }
-    /*@media screen and (max-width: 1163px) {
-        nav .nav-link {
-            width: 20%;
+    
+    @media screen and (max-width: 555px) {
+        nav {
+            width: calc(100% - 20px);
         }
-        .wrap {
-            min-height: calc(100vh - 110px);
+        nav .button {
+            font-size: 17px;
         }
-    }*/
+        section h1 {
+            font-size: 36px;
+        }
+        section {
+            margin-left: 4px;
+            margin-right: 6px;
+            margin-top: 50px;
+        }
+        section p {
+            font-size: 22px;
+            text-align: justify;
+        }
+        section a:link {
+            font-size: 20px;
+        }
+        .footer .copyright {
+            font-size: 15px;
+        }
+    }
+    
+    @media screen and (max-width: 372px) {
+        nav {
+            width: calc(100% - 20px);
+        }
+        nav .button {
+            padding-right: 6px;
+        }
+        section {
+            margin-top: 50px;
+        }
+        section h1 {
+            margin-top: 0;
+            font-size: 32px;
+        }
+        section h2 {
+            font-size: 32px;
+        }
+        section p {
+            font-size: 20px;
+        }
+        section a:link {
+            font-size: 18px;
+        }
+    }
