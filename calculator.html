@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Calculator</title>
+    <link href="calculator.css" rel="stylesheet">
+    <link href="images/calculator_icon.png" rel="icon">
+</head>
+
+<body>
+    <div class="toggle-container">
+        <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+    </div>
+
+    <section>
+        <div class="wrapper">
+            <div class="command-container">
+                <span class="cbtn btn-commands">Keyboard Commands</span>
+                <div class="note-content">
+                    <li>
+                        <ol>= press ENTER</ol>
+                        <ol>AC press BACKSPACE</ol>
+                        <ol>+/- press CTRL</ol>
+                    </li>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <!-- CALCULATOR DISPLAY -->
+                <div class="calculator-display">
+
+                    <textarea type="text" class="output" value="" readonly></textarea>
+
+                    <input type="text" class="display_result" value="" readonly />
+                </div>
+
+
+                <!-- CALCULATOR DISPLAY -->
+                <div class="calc_keys">
+
+
+                    <button type="button" id="ac" class="btn operator_horizontal all-clear" value="all-clear">AC</button>
+                    <button type="button" id="plusminus" class="btn operator_horizontal operator" value="+/-">+/-</button>
+                    <button type="button" id="percentage" class="btn operator_horizontal operator" value="%">&#37;</button>
+                    <button type="button" id="division" class="btn operator_vertical operator" value="/">&#247;</button>
+                    <button type="button" id="seven" class="btn number" value="7">7</button>
+                    <button type="button" id="eight" class="btn number" value="8">8</button>
+                    <button type="button" id="nine" class="btn number" value="9">9</button>
+                    <button type="button" id="multiplication" class="btn operator_vertical operator" value="*">&times;</button>
+                    <button type="button" id="four" class="btn number" value="4">4</button>
+                    <button type="button" id="five" class="btn number" value="5">5</button>
+                    <button type="button" id="six" class="btn number" value="6">6</button>
+                    <button type="button" id="subtraction" class="btn operator_vertical operator" value="-">-</button>
+                    <button type="button" id="one" class="btn number" value="1">1</button>
+                    <button type="button" id="two" class="btn number" value="2">2</button>
+                    <button type="button" id="three" class="btn number" value="3">3</button>
+                    <button type="button" id="addition" class="btn operator_vertical operator" value="+">+</button>
+                    <button type="button" id="zero" class="btn number " value="0">0</button>
+                    <button type="button" id="point" class="btn decimal" value=".">&period;</button>
+                    <button type="button" id="equal" class="btn operator_vertical equal-sign operator" value="=">=</button>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="calculator.js">
+        // <!-- <script src="example.js"> -->
+    </script>
+</body>
+
+
+</html>

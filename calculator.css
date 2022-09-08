@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --background: #000;
+    --vertical-operator: #e71980;
+    --vert-hover: rgb(252, 107, 189);
+    --horizontal-operator: rgb(120, 120, 120);
+    --horiz-hover: rgb(170, 170, 170);
+    --numbers: #fff;
+    --button-number: #fff;
+    --button-operator: #000;
+    --result-panel: #fff;
+    --result-panel-output: rgba(255, 255, 255, 0.655);
+    --btn-bg: rgb(38, 38, 38);
+    --btn-hover: rgb(88, 88, 88);
+    --scrollbar: rgb(110, 108, 109);
+    --command-note: rgba(255, 255, 255, 0.1);
+    --command-hover: rgba(255, 255, 255, 0.149);
+    --command-btn: #fff;
+}
+
+html[data-theme='light'] {
+    --background: #F1E4E8;
+    --vertical-operator: rgb(168, 166, 166);
+    --vert-hover: rgb(187, 187, 187);
+    --horizontal-operator: #422057FF;
+    --horiz-hover: rgb(109, 76, 129);
+    --numbers: #fff;
+    --button-number: rgb(0, 0, 0);
+    --button-operator: rgb(255, 255, 255);
+    --toggle-click: #7a2a8a;
+    --result-panel: rgb(0, 0, 0);
+    --result-panel-output: rgba(56, 56, 56, 0.688);
+    --btn-bg: #a1629b;
+    --btn-hover: #b682b1;
+    --scrollbar: rgb(119, 119, 119);
+    --command-note: #cea6ca;
+    --command-hover: #c596c2;
+    --command-btn: #000;
+}
+
+body {
+    min-height: 95vh;
+    background: var(--background);
+    transition: 0.5s;
+}
+
+.toggle-container {
+    height: 40px;
+    margin: 5px 5px auto auto;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: grey;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked+label {
+    background: var(--toggle-click);
+}
+
+input:checked+label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 30px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    /*align-items: center;
+    justify-content: center;*/
+}
+
+.command-container {
+    margin: 0;
+    padding: 5% 5% 5% 5px;
+    width: 30%;
+}
+
+.cbtn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-commands {
+    color: var(--command-btn);
+    transition: all 0.3s;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: var(--command-note)
+}
+
+.btn-commands span {
+    transition: all 0.5s;
+}
+
+.btn-commands:hover {
+    background-color: var(--command-hover)
+}
+
+.note-content.open {
+    display: block;
+    width: 60%;
+}
+
+.note-content {
+    background: var(--command-note);
+    height: 20%;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    padding: 15px 20px 20px 20px;
+    list-style-type: none;
+    position: relative;
+    color: var(--command-btn);
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 5% 10% 0;
+    text-align: center;
+}
+
+.calculator-display {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calc_keys {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-gap: 2px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.display_result {
+    grid-column: span 4;
+    height: 100%;
+    width: 320px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 0 18px 0;
+    font-size: 3.2rem;
+    background: transparent;
+    color: var(--result-panel);
+}
+
+.output {
+    grid-column: span 4;
+    width: 320px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 0 22px 0;
+    font-size: 1.5rem;
+    background: transparent;
+    color: var(--result-panel-output);
+    height: 30px;
+    resize: none;
+    overflow: auto;
+    cursor: default;
+}
+
+ ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+ ::-webkit-scrollbar-track {
+    border: 1px solid var(--scrollbar);
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar);
+    border-radius: 10px;
+    height: 3px;
+}
+
+.btn {
+    color: var(--button-number);
+    border-radius: 50px;
+    border-style: none;
+    font-size: 20px;
+    width: 4.4rem;
+    height: 4.4rem;
+    margin: 2px;
+}
+
+.btn.operator_horizontal {
+    color: var(--button-operator);
+    background-color: var(--horizontal-operator);
+}
+
+.btn.btn.operator_horizontal:hover {
+    background-color: var(--horiz-hover);
+}
+
+.btn.operator_vertical {
+    background-color: var(--vertical-operator);
+}
+
+.btn.operator_vertical:hover {
+    background-color: var(--vert-hover);
+}
+
+.btn.number,
+.btn.decimal {
+    background-color: var(--btn-bg);
+}
+
+.btn.number:hover,
+.btn.decimal:hover {
+    background-color: var(--btn-hover);
+}
+
+#zero {
+    border-radius: 50px;
+    width: 9rem;
+    padding-left: 18%;
+    text-align: left;
+    grid-column: auto / span 2;
+}
+
+.transition,
+.transition *,
+.transition *:before,
+.transition *:after {
+    transition: all 850ms;
+    transition-delay: 0;
+}
+
+#plusminus[disabled] {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 300px) {
+    html,
+    body {
+        overflow: hidden;
+    }
+    section {
+        margin: 20% 0 20% 0;
+    }
+    .btn {
+        font-size: 1rem;
+        width: 3.8rem;
+        height: 3.8rem;
+        margin: 1px;
+    }
+    #zero {
+        width: 8rem;
+    }
+    .display_result,
+    .output {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 400px) and (orientation: portrait) {
+    .container {
+        padding: 5% 5% 0;
+    }
+}
+
+@media screen and (min-width: 400px) and (orientation: portrait) {
+    .container {
+        padding: 5% 8% 0;
+    }
+}
+
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+    .command-container {
+        display: none;
+    }
+    .wrapper {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    .container {
+        padding-top: 0;
+        padding-bottom: 1%;
+    }
+    .calc_keys {
+        padding: 10px 20px 0;
+    }
+    .btn {
+        border-radius: 50px;
+        border-style: none;
+        font-size: 1rem;
+        width: 5rem;
+        height: 2.8rem;
+        margin: 1px;
+    }
+    #zero {
+        width: 10.4rem;
+    }
+    .wrapper {
+        padding: auto;
+        width: 490px;
+        display: flex;
+        margin: auto;
+    }
+    .display_result,
+    .output {
+        width: 360px;
+    }
+    .display_result {
+        font-size: 2rem;
+    }
+    .output {
+        font-size: 0.9rem;
+    }
+    .toggle-container {
+        height: 30px;
+        margin: 5px 5px auto auto;
+        width: 490px;
+        cursor: pointer;
+    }
+    /*.label {
+        width: 10px;
+        height: 10px;
+    }*/
+    .command-container {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) {
+    .command-container {
+        width: 30%;
+    }
+    .note-content.open {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) and (orientation: landscape) {
+    .command-container {
+        width: 28%;
+    }
+    .note-content.open {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 655px) and (orientation: landscape) {
+    .btn {
+        font-size: 0.8rem;
+        width: 4rem;
+        height: 1.8rem;
+        margin: 1px;
+    }
+    #zero {
+        width: 8.2rem;
+    }
+    .display_result,
+    .output {
+        width: 300px;
+    }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
